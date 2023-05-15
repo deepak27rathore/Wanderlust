@@ -7,14 +7,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.wanderlust.app.adapter.RecentsAdapter;
+import com.wanderlust.app.adapter.TopPlacesAdapter;
 import com.wanderlust.app.model.RecentsData;
+import com.wanderlust.app.model.TopPlacesData;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView recentRecycler;
+    RecyclerView recentRecycler, topPlacesRecycler;
     RecentsAdapter recentsAdapter;
+    TopPlacesAdapter topPlacesAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         setRecentRecycler(recentsDataList);
 
+        List<TopPlacesData> topPlacesDataList=new ArrayList<>();
+        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+
+        setTopPlacesRecycler((topPlacesDataList));
+
     }
     private  void setRecentRecycler(List<RecentsData> recentsDataList){
 
@@ -39,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
         recentRecycler.setLayoutManager(layoutManager);
         recentsAdapter = new RecentsAdapter(this, recentsDataList);
         recentRecycler.setAdapter(recentsAdapter);
+
+    }
+    private  void setTopPlacesRecycler(List<TopPlacesData> topPlacesDataList){
+
+        topPlacesRecycler = findViewById(R.id.top_places);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        topPlacesRecycler.setLayoutManager(layoutManager);
+        topPlacesAdapter = new TopPlacesAdapter(this, topPlacesDataList);
+        topPlacesRecycler.setAdapter(topPlacesAdapter);
 
     }
 }

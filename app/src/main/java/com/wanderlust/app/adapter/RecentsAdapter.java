@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.wanderlust.app.R;
 import com.wanderlust.app.model.RecentsData;
+import com.wanderlust.app.model.TopPlacesData;
 
 import java.util.List;
 
