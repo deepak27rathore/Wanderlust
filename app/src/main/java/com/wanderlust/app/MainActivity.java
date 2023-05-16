@@ -13,7 +13,7 @@ import com.wanderlust.app.model.TopPlacesData;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//main file
 public class MainActivity extends AppCompatActivity {
     RecyclerView recentRecycler, topPlacesRecycler;
     RecentsAdapter recentsAdapter;
