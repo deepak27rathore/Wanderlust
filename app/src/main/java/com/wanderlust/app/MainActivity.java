@@ -13,7 +13,7 @@ import com.wanderlust.app.model.TopPlacesData;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//main activity
 public class MainActivity extends AppCompatActivity {
     RecyclerView recentRecycler, topPlacesRecycler;
     RecentsAdapter recentsAdapter;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//data records
         List<RecentsData> recentsDataList = new ArrayList<>();
         recentsDataList.add(new RecentsData("Mughal Gardens","India","From Rs.2000",R.drawable.bg));
         recentsDataList.add(new RecentsData("Himalaya Hills","India","From Rs.3000",R.drawable.recentimage2));
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private  void setRecentRecycler(List<RecentsData> recentsDataList){
-
+//function for recents
         recentRecycler = findViewById(R.id.recent_recycler);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
         recentRecycler.setLayoutManager(layoutManager);
