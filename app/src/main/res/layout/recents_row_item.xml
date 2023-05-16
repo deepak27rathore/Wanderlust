@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/place_image"
-        android:layout_width="0dp"
-        android:layout_height="224dp"
+        android:layout_width="172dp"
+        android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"

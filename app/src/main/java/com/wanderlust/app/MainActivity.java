@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List<RecentsData> recentsDataList = new ArrayList<>();
-        recentsDataList.add(new RecentsData("Dal Lake","India","From Rs.2000",R.drawable.recentimage1));
+        recentsDataList.add(new RecentsData("Mughal Gardens","India","From Rs.2000",R.drawable.bg));
         recentsDataList.add(new RecentsData("Himalaya Hills","India","From Rs.3000",R.drawable.recentimage2));
         recentsDataList.add(new RecentsData("Nilgiri Lake","India","From Rs.4000",R.drawable.recentimage1));
         recentsDataList.add(new RecentsData("Udaygiri Hills","India","From Rs.3000",R.drawable.recentimage2));
