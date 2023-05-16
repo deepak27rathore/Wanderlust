@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
         List<TopPlacesData> topPlacesDataList=new ArrayList<>();
         topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
-        topPlacesDataList.add(new TopPlacesData("Kashmir Hill", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Manali", "India", "From Rs.2600", R.drawable.topplaces));
+        topPlacesDataList.add(new TopPlacesData("Victoria Mahal", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Leh-Ladakh", "India", "From Rs.1600", R.drawable.topplaces ));
+        topPlacesDataList.add(new TopPlacesData("Ooty", "India", "From Rs.1600", R.drawable.topplaces ));
 
         setTopPlacesRecycler((topPlacesDataList));
 
