@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //data records
         List<RecentsData> recentsDataList = new ArrayList<>();
-        recentsDataList.add(new RecentsData("Mughal Gardens","India","From Rs.2000",R.drawable.bg));
-        recentsDataList.add(new RecentsData("Himalaya Hills","India","From Rs.3000",R.drawable.recentimage2));
+        recentsDataList.add(new RecentsData("Rajasthan","India","From Rs.2000",R.drawable.bg));
+        recentsDataList.add(new RecentsData("Bodh Gaya","India","From Rs.3000",R.drawable.recentimage2));
         recentsDataList.add(new RecentsData("Nilgiri Lake","India","From Rs.4000",R.drawable.recentimage1));
         recentsDataList.add(new RecentsData("Udaygiri Hills","India","From Rs.3000",R.drawable.recentimage2));
         recentsDataList.add(new RecentsData("Rajsamand Lake","India","From Rs.3500",R.drawable.recentimage1));
-        recentsDataList.add(new RecentsData("Arawali Hills","India","From Rs.1500",R.drawable.recentimage2));
+        recentsDataList.add(new RecentsData("Kailash","India","From Rs.1500",R.drawable.recentimage2));
 
         setRecentRecycler(recentsDataList);
 
